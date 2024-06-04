@@ -4,6 +4,8 @@ import React from "react";
 import BankCard from "./BankCard";
 
 const RightSidebar = ({ user, transactions, banks }: RightSidebarProps) => {
+  console.log(user);
+  
   return (
     <aside className="right-sidebar">
       <section className="flex flex-col pb-8">
@@ -11,7 +13,7 @@ const RightSidebar = ({ user, transactions, banks }: RightSidebarProps) => {
         <div className="profile">
           <div className="profile-img">
             <span className="text-5xl font-bold text-blue-500">
-              {user.name[0]}
+              {user?.name[0]}
             </span>
           </div>
 
